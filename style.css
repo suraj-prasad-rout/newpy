@@ -7,10 +7,6 @@
     border: border-box;
 }
 
-
-.home{
-  
-}
 .nav{
     height: 60px;
     background-color: #3c6e71;
@@ -42,8 +38,6 @@
     border-radius: 0.4rem;
 }
 
-
-/* styles.css */
 .popup-overlay {
     display: none;
     position: fixed;
