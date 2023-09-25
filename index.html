@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News py</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" /> -->
     <!-- <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="home">
+
         <div class="header">
-            <i class="fa-solid fa-bars"></i>
-            <a href="#">Breaking news</a>
-            <a href="#">Ai feedback</a>
-            <a href="#">Sports</a>
-            <a href="#">Bollywood</a>
-            <a href="#">help</a>
+            <div class="nav">
+                <i class="fa-solid fa-bars"></i>
+                <a href="#">Breaking news</a>
+                <a href="#">Ai feedback</a>
+                <input type="search" id="search-box" placeholder="   search for topics">
+                <a href="#">Sports</a>
+                <a href="#">help</a>               
+            </div>     
         </div>
-        <h3>Welcome to Newspy</h3>
-        <div class="welcomebox">
-            <p>News py is an AI based News collector and AI based feedback system 
-                that collects news of different catagories of all the states in INDIA</p>
-            <button id="welcome-ok">Ok</button>
+
+       <div class="home">
+        <h3 id = welcome-typing>Welcome to Newspy</h3>
+        <div class="popup-overlay" id="popup-overlay">
+            <div class="welcomebox popup-content">
+                <p>News py is a feedback software for the Government of India
+                    related News Stories in Regional Media using 
+                    Artificial Intelligence / Machine learning</p>
+                <button id="welcome-ok">Ok</button>
+            </div>
         </div>
+    
         <div class="state-box">
             <h3>Please select a state or a union territories
                 to get the news and information
                 about that state or uninon-territorie</h3>
             <div class="state-button">
-                <button id="">Andhra Pradesh</button>
+                <button>Andhra Pradesh</button>
                 <button>Arunachal Pradesh</button>
                 <button>Assam</button>
                 <button>Bihar</button>
@@ -59,8 +70,6 @@
                 <button>Uttar Pradesh</button>
                 <button>Uttarakhand</button>
                 <button>West Bengal	</button>
-            </div>
-            <div class="uninon-territories">
                 <button>Andaman and Nicobar Island</button>
                 <button>Chandigarh</button>
                 <button>Dadra and Nagar Haveli and Daman and Diu</button>
@@ -68,14 +77,15 @@
                 <button>Lakshadweep</button>
                 <button>Jammu and Kashmir</button>
                 <button>Puducherry</button>
+            </div>     
+        </div>
+        <div class="trending-topics">
+            <h3>Some trending topic across India</h3>
             </div>
-            <div class="trending-topics">
-                <h3>Some trending topic across India</h3>
-                
-            </div>
+            
         </div>
 
-    </div>
+       </div>
     <!-- <py-script src ="main.py"></py-script> -->
     <script src="app.js"></script>
 </body>
